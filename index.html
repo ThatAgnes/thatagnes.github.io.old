@@ -1,6 +1,10 @@
 <div id="adobe-dc-view"></div>
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 <script type="text/javascript">
+	const previewConfig = {
+              showDownloadPDF: false,
+              showPageControls: false
+              }
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
 		var adobeDCView = new AdobeDC.View({clientId: "5e9d7043b1b640e6bc54156082e2cf5c", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
